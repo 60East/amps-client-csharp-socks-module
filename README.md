@@ -7,7 +7,7 @@ connect to AMPS through a SOCKS5 proxy.
 
 The implementation is very simple, and has the following limitations:
 
-* Authentication is not supported
+* SOCKS-level authentication is not supported (AMPS authentication is fully supported)
 * The server and proxy address must be provided in the connection string
 
 ## Building the Transport
@@ -17,7 +17,7 @@ There are two options for using this transport:
 To build a standalone assembly:
 
 1. Load the provided solution and project.
-2. Update the reference to the AMPS.Client DLL to a 5.3 or later version of
+2. Update the reference to the AMPS.Client DLL to a 5.2.4 or later version of
 the AMPS C# client.
 3. Build the solution
 
@@ -26,7 +26,7 @@ The assembly is now ready to use and distribute.
 To include the Transport directly in your project:
 
 1. Add the SOCKSTransport.cs and SOCKSTransportImpl.cs files to
-   a project that references the AMPS Client (5.3 or later).
+   a project that references the AMPS Client (5.2.4 or later).
 
 2. Build the project. The SOCKS transport will be included
    and ready to use.
